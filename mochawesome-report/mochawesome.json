@@ -2,14 +2,14 @@
   "stats": {
     "suites": 6,
     "tests": 21,
-    "passes": 6,
+    "passes": 9,
     "pending": 0,
-    "failures": 15,
-    "start": "2021-08-03T06:47:09.949Z",
-    "end": "2021-08-03T06:47:09.967Z",
+    "failures": 12,
+    "start": "2021-08-03T07:18:50.445Z",
+    "end": "2021-08-03T07:18:50.463Z",
     "duration": 18,
     "testsRegistered": 21,
-    "passPercent": 28.57142857142857,
+    "passPercent": 42.857142857142854,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5fa04028-1fe2-43a4-b4fc-ac5657082e9e",
+      "uuid": "3c571495-456f-4b42-8564-36660b13428b",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d287d223-2777-44eb-b0b0-4ade2a01d5fe",
+          "uuid": "a11f5d66-7858-4f4e-81c9-c4e5f412f8e0",
           "title": "Addition test",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/addition.test.js",
           "file": "/test/addition.test.js",
@@ -38,7 +38,7 @@
               "title": "Return sum ",
               "fullTitle": "Addition test Return sum ",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "expect(addition(10, 20, 30)).to.equal(60);",
               "err": {},
-              "uuid": "b59121fa-012c-458a-9b4f-463535fc28c4",
-              "parentUUID": "d287d223-2777-44eb-b0b0-4ade2a01d5fe",
+              "uuid": "eec95529-bc04-4085-b39b-1357145fa635",
+              "parentUUID": "a11f5d66-7858-4f4e-81c9-c4e5f412f8e0",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "expect(function () {\n  addition();\n}).to.throw(Error, \"Invalid Input\");",
               "err": {},
-              "uuid": "1e91bacf-8138-4eaa-8356-ca62c0d3656e",
-              "parentUUID": "d287d223-2777-44eb-b0b0-4ade2a01d5fe",
+              "uuid": "6cd29ef9-9c95-413d-a4a9-b0cbab157bcf",
+              "parentUUID": "a11f5d66-7858-4f4e-81c9-c4e5f412f8e0",
               "isHook": false,
               "skipped": false
             },
@@ -83,28 +83,28 @@
               "context": null,
               "code": "expect(() => {\n  addition(\"a\", \"b\");\n}).to.throw(Error, \"Invalid Input\");",
               "err": {},
-              "uuid": "ecade1ab-3cbd-47a2-a0a4-9e276f0f998b",
-              "parentUUID": "d287d223-2777-44eb-b0b0-4ade2a01d5fe",
+              "uuid": "525d690e-6e1d-4efa-9c52-7536a6ae2580",
+              "parentUUID": "a11f5d66-7858-4f4e-81c9-c4e5f412f8e0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b59121fa-012c-458a-9b4f-463535fc28c4",
-            "1e91bacf-8138-4eaa-8356-ca62c0d3656e",
-            "ecade1ab-3cbd-47a2-a0a4-9e276f0f998b"
+            "eec95529-bc04-4085-b39b-1357145fa635",
+            "6cd29ef9-9c95-413d-a4a9-b0cbab157bcf",
+            "525d690e-6e1d-4efa-9c52-7536a6ae2580"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "cf2a28ec-40e4-4510-8ad1-59fc6ecc0005",
+          "uuid": "833e9bd5-5fa4-43d2-9980-0895c62199dd",
           "title": "Time Converter",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/convertTime.test.js",
           "file": "/test/convertTime.test.js",
@@ -124,8 +124,8 @@
               "context": null,
               "code": "expect(() => {\n  convertTime(\"A\");\n}).to.throw(\"Invalid Input\");",
               "err": {},
-              "uuid": "efdc5860-51d3-4c04-9929-398a43383f7f",
-              "parentUUID": "cf2a28ec-40e4-4510-8ad1-59fc6ecc0005",
+              "uuid": "e9017b3b-98e9-456d-95f1-4c12d9b8ba9b",
+              "parentUUID": "833e9bd5-5fa4-43d2-9980-0895c62199dd",
               "isHook": false,
               "skipped": false
             },
@@ -142,8 +142,8 @@
               "context": null,
               "code": "// expect(convertTime(3600)).to.have.property(\"hours\");\n// expect(convertTime(3600)).to.have.property(\"minutes\");\n// expect(convertTime(3600)).to.have.property(\"seconds\");\nexpect(convertTime(3600)).to.have.keys([\"hours\", \"minutes\", \"seconds\"]);",
               "err": {},
-              "uuid": "7a9bd758-316e-41f2-adca-15b771ceb860",
-              "parentUUID": "cf2a28ec-40e4-4510-8ad1-59fc6ecc0005",
+              "uuid": "97f1a6fb-e4f9-4b6f-a62c-6820d3a3a178",
+              "parentUUID": "833e9bd5-5fa4-43d2-9980-0895c62199dd",
               "isHook": false,
               "skipped": false
             },
@@ -160,17 +160,17 @@
               "context": null,
               "code": "// expect(convertTime(3600).hours).to.be.equal(1);\nexpect(convertTime(3600)).to.deep.equal({\n  hours: 1,\n  minutes: 0,\n  seconds: 0,\n});",
               "err": {},
-              "uuid": "283cd291-bd1e-4031-8b1c-10562ef65834",
-              "parentUUID": "cf2a28ec-40e4-4510-8ad1-59fc6ecc0005",
+              "uuid": "a2556a23-6fc5-4b01-966b-79e09eb7c24a",
+              "parentUUID": "833e9bd5-5fa4-43d2-9980-0895c62199dd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "efdc5860-51d3-4c04-9929-398a43383f7f",
-            "7a9bd758-316e-41f2-adca-15b771ceb860",
-            "283cd291-bd1e-4031-8b1c-10562ef65834"
+            "e9017b3b-98e9-456d-95f1-4c12d9b8ba9b",
+            "97f1a6fb-e4f9-4b6f-a62c-6820d3a3a178",
+            "a2556a23-6fc5-4b01-966b-79e09eb7c24a"
           ],
           "failures": [],
           "pending": [],
@@ -181,7 +181,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "3f4ac765-361c-40f2-a25a-8f2e4c242ce3",
+          "uuid": "06432ecf-6422-41f3-a3d8-0b4fd9a9f93b",
           "title": "Frequency Counter",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/frequencyCounter.test.js",
           "file": "/test/frequencyCounter.test.js",
@@ -193,20 +193,16 @@
               "fullTitle": "Frequency Counter Check for all objects",
               "timedOut": false,
               "duration": 0,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "expect(frequencyCounter(\"aeiou\")).to.have.keys([\"a\", \"e\", \"i\", \"o\", \"u\"]);",
-              "err": {
-                "message": "TypeError: Cannot convert undefined or null to object",
-                "estack": "TypeError: Cannot convert undefined or null to object\n    at Function.keys (<anonymous>)\n    at Object.getOwnEnumerableProperties (node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js:28:17)\n    at Proxy.assertKeys (node_modules/chai/lib/chai/core/assertions.js:2365:18)\n    at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)\n    at Context.it (test/frequencyCounter.test.js:6:47)",
-                "diff": null
-              },
-              "uuid": "6aa762e3-1d10-4182-a401-fab8213b446a",
-              "parentUUID": "3f4ac765-361c-40f2-a25a-8f2e4c242ce3",
+              "err": {},
+              "uuid": "76ac5a22-7802-4156-bdd0-0a0dba3f1a29",
+              "parentUUID": "06432ecf-6422-41f3-a3d8-0b4fd9a9f93b",
               "isHook": false,
               "skipped": false
             },
@@ -214,21 +210,17 @@
               "title": "Check for vowel frequency",
               "fullTitle": "Frequency Counter Check for vowel frequency",
               "timedOut": false,
-              "duration": 1,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "expect(frequencyCounter(\"Surfboard\")).to.deep.equal({\n  a: 1,\n  e: 0,\n  i: 0,\n  o: 1,\n  u: 1,\n});",
-              "err": {
-                "message": "AssertionError: expected undefined to deeply equal { a: 1, e: 0, i: 0, o: 1, u: 1 }",
-                "estack": "AssertionError: expected undefined to deeply equal { a: 1, e: 0, i: 0, o: 1, u: 1 }\n    at Context.it (test/frequencyCounter.test.js:10:51)",
-                "diff": null
-              },
-              "uuid": "49b0be81-8644-4d33-8169-60dd6c0949ee",
-              "parentUUID": "3f4ac765-361c-40f2-a25a-8f2e4c242ce3",
+              "err": {},
+              "uuid": "429ca03f-1b1c-4602-a1c7-bf612d2c2bc5",
+              "parentUUID": "06432ecf-6422-41f3-a3d8-0b4fd9a9f93b",
               "isHook": false,
               "skipped": false
             },
@@ -236,41 +228,37 @@
               "title": "Check for invalid input",
               "fullTitle": "Frequency Counter Check for invalid input",
               "timedOut": false,
-              "duration": 1,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "expect(() => {\n  frequencyCounter(123);\n}).to.throw(Error, \"Invalid Input\");",
-              "err": {
-                "message": "AssertionError: expected [Function] to throw Error",
-                "estack": "AssertionError: expected [Function] to throw Error\n    at Context.it (test/frequencyCounter.test.js:22:16)",
-                "diff": null
-              },
-              "uuid": "44842c5a-27ed-4e7a-b267-6879ed703b91",
-              "parentUUID": "3f4ac765-361c-40f2-a25a-8f2e4c242ce3",
+              "err": {},
+              "uuid": "934d9c7d-9a4a-41fb-84fe-1c3ef35a0c53",
+              "parentUUID": "06432ecf-6422-41f3-a3d8-0b4fd9a9f93b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "6aa762e3-1d10-4182-a401-fab8213b446a",
-            "49b0be81-8644-4d33-8169-60dd6c0949ee",
-            "44842c5a-27ed-4e7a-b267-6879ed703b91"
+          "passes": [
+            "76ac5a22-7802-4156-bdd0-0a0dba3f1a29",
+            "429ca03f-1b1c-4602-a1c7-bf612d2c2bc5",
+            "934d9c7d-9a4a-41fb-84fe-1c3ef35a0c53"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "e9b6ccdb-0859-4113-8d27-b45450327599",
+          "uuid": "10d970e8-794c-42cf-b2d4-7efa7285605d",
           "title": "Object Structure",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/objectStructure.test.js",
           "file": "/test/objectStructure.test.js",
@@ -281,7 +269,7 @@
               "title": "Check for no arguments passed",
               "fullTitle": "Object Structure Check for no arguments passed",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -294,8 +282,8 @@
                 "estack": "AssertionError: expected [Function] to throw Error\n    at Context.it (test/objectStructure.test.js:8:16)",
                 "diff": null
               },
-              "uuid": "41eaa280-0323-447f-85d4-44c6d1bf2dce",
-              "parentUUID": "e9b6ccdb-0859-4113-8d27-b45450327599",
+              "uuid": "002bdba7-2776-49a8-9049-72bfa26b8208",
+              "parentUUID": "10d970e8-794c-42cf-b2d4-7efa7285605d",
               "isHook": false,
               "skipped": false
             },
@@ -316,8 +304,8 @@
                 "estack": "AssertionError: expected undefined to deeply equal {}\n    at Context.it (test/objectStructure.test.js:12:44)",
                 "diff": null
               },
-              "uuid": "a2140aa9-7b73-4cf0-b63a-6c3bbca861ad",
-              "parentUUID": "e9b6ccdb-0859-4113-8d27-b45450327599",
+              "uuid": "2d50c4e2-0182-4d84-92db-0f31dfde7bd5",
+              "parentUUID": "10d970e8-794c-42cf-b2d4-7efa7285605d",
               "isHook": false,
               "skipped": false
             },
@@ -325,7 +313,7 @@
               "title": "Check for single level object",
               "fullTitle": "Object Structure Check for single level object",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -338,8 +326,8 @@
                 "estack": "AssertionError: expected undefined to deeply equal { name: 'string', age: 'number' }\n    at Context.it (test/objectStructure.test.js:16:72)",
                 "diff": null
               },
-              "uuid": "e3a0e688-8fdf-48c0-867c-9c9f9e0d457e",
-              "parentUUID": "e9b6ccdb-0859-4113-8d27-b45450327599",
+              "uuid": "6403ac30-99e9-4260-879e-e8865c6a31f9",
+              "parentUUID": "10d970e8-794c-42cf-b2d4-7efa7285605d",
               "isHook": false,
               "skipped": false
             }
@@ -347,19 +335,19 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "41eaa280-0323-447f-85d4-44c6d1bf2dce",
-            "a2140aa9-7b73-4cf0-b63a-6c3bbca861ad",
-            "e3a0e688-8fdf-48c0-867c-9c9f9e0d457e"
+            "002bdba7-2776-49a8-9049-72bfa26b8208",
+            "2d50c4e2-0182-4d84-92db-0f31dfde7bd5",
+            "6403ac30-99e9-4260-879e-e8865c6a31f9"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "1120db63-57b9-4e9a-b171-a374a8070277",
+          "uuid": "5a441b70-7f49-4a5f-a2f6-f302df33b46e",
           "title": "RGB Converter",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/rgbToHexConverter.test.js",
           "file": "/test/rgbToHexConverter.test.js",
@@ -383,8 +371,8 @@
                 "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.it (test/rgbToHexConverter.test.js:7:42)",
                 "diff": null
               },
-              "uuid": "1266dec6-7b0c-4e91-87fb-531c2a4084a2",
-              "parentUUID": "1120db63-57b9-4e9a-b171-a374a8070277",
+              "uuid": "5bd15975-7e79-447b-877a-aebfe7f233f3",
+              "parentUUID": "5a441b70-7f49-4a5f-a2f6-f302df33b46e",
               "isHook": false,
               "skipped": false
             },
@@ -405,8 +393,8 @@
                 "estack": "AssertionError: expected undefined to equal '#0a0a0a'\n    at Context.it (test/rgbToHexConverter.test.js:12:47)",
                 "diff": null
               },
-              "uuid": "5cdfe575-3316-428d-b0f3-a3b5a7a2fb12",
-              "parentUUID": "1120db63-57b9-4e9a-b171-a374a8070277",
+              "uuid": "11da21e5-41bd-43d9-b4e1-9492e39ef569",
+              "parentUUID": "5a441b70-7f49-4a5f-a2f6-f302df33b46e",
               "isHook": false,
               "skipped": false
             },
@@ -414,7 +402,7 @@
               "title": "Checks if input is greater than 255",
               "fullTitle": "RGB Converter Checks if input is greater than 255",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -427,8 +415,8 @@
                 "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rgbToHexConverter.test.js:19:16)",
                 "diff": null
               },
-              "uuid": "1ff1e02a-21e9-4e73-b99d-67ac3cea4a46",
-              "parentUUID": "1120db63-57b9-4e9a-b171-a374a8070277",
+              "uuid": "f7098490-b25c-41f8-83be-1499f5861da1",
+              "parentUUID": "5a441b70-7f49-4a5f-a2f6-f302df33b46e",
               "isHook": false,
               "skipped": false
             },
@@ -436,7 +424,7 @@
               "title": "Takes only three inputs",
               "fullTitle": "RGB Converter Takes only three inputs",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -449,8 +437,8 @@
                 "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rgbToHexConverter.test.js:26:16)",
                 "diff": null
               },
-              "uuid": "e3ad6287-0054-4a0e-ac44-20b039693078",
-              "parentUUID": "1120db63-57b9-4e9a-b171-a374a8070277",
+              "uuid": "5d57222b-22d2-4259-8ce0-2d70ff4941c3",
+              "parentUUID": "5a441b70-7f49-4a5f-a2f6-f302df33b46e",
               "isHook": false,
               "skipped": false
             },
@@ -458,7 +446,7 @@
               "title": "Only takes integer input",
               "fullTitle": "RGB Converter Only takes integer input",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -471,8 +459,8 @@
                 "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rgbToHexConverter.test.js:32:16)",
                 "diff": null
               },
-              "uuid": "ce769808-ad36-474b-949b-0eed7962715a",
-              "parentUUID": "1120db63-57b9-4e9a-b171-a374a8070277",
+              "uuid": "99d3cde4-ee88-4241-a90b-7f3c4571c322",
+              "parentUUID": "5a441b70-7f49-4a5f-a2f6-f302df33b46e",
               "isHook": false,
               "skipped": false
             }
@@ -480,21 +468,21 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "1266dec6-7b0c-4e91-87fb-531c2a4084a2",
-            "5cdfe575-3316-428d-b0f3-a3b5a7a2fb12",
-            "1ff1e02a-21e9-4e73-b99d-67ac3cea4a46",
-            "e3ad6287-0054-4a0e-ac44-20b039693078",
-            "ce769808-ad36-474b-949b-0eed7962715a"
+            "5bd15975-7e79-447b-877a-aebfe7f233f3",
+            "11da21e5-41bd-43d9-b4e1-9492e39ef569",
+            "f7098490-b25c-41f8-83be-1499f5861da1",
+            "5d57222b-22d2-4259-8ce0-2d70ff4941c3",
+            "99d3cde4-ee88-4241-a90b-7f3c4571c322"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "de6c8373-dc3a-403d-8dd3-a9197d7d9952",
+          "uuid": "6538a79f-fb3c-4087-b613-06d340fdb13f",
           "title": "Check String rotation",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/rotateString.test.js",
           "file": "/test/rotateString.test.js",
@@ -518,8 +506,8 @@
                 "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rotateString.test.js:8:16)",
                 "diff": null
               },
-              "uuid": "158810c4-c425-4aee-9675-177646b78295",
-              "parentUUID": "de6c8373-dc3a-403d-8dd3-a9197d7d9952",
+              "uuid": "10925afc-a583-4647-a71d-58cd8a29589d",
+              "parentUUID": "6538a79f-fb3c-4087-b613-06d340fdb13f",
               "isHook": false,
               "skipped": false
             },
@@ -540,8 +528,8 @@
                 "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rotateString.test.js:13:16)",
                 "diff": null
               },
-              "uuid": "1564a873-6964-4cdb-8015-fcb77902beee",
-              "parentUUID": "de6c8373-dc3a-403d-8dd3-a9197d7d9952",
+              "uuid": "fb5d2ee8-5604-4a0d-b67d-c7b2d03ff5ea",
+              "parentUUID": "6538a79f-fb3c-4087-b613-06d340fdb13f",
               "isHook": false,
               "skipped": false
             },
@@ -562,8 +550,8 @@
                 "estack": "AssertionError: expected undefined to equal 'urfboardS'\n    at Context.it (test/rotateString.test.js:16:56)",
                 "diff": null
               },
-              "uuid": "8a0cf168-4a63-4427-90a5-6dd7790cb71e",
-              "parentUUID": "de6c8373-dc3a-403d-8dd3-a9197d7d9952",
+              "uuid": "d573e52d-189f-41e2-9811-69860cf2c38c",
+              "parentUUID": "6538a79f-fb3c-4087-b613-06d340fdb13f",
               "isHook": false,
               "skipped": false
             },
@@ -584,8 +572,8 @@
                 "estack": "AssertionError: expected undefined to equal 'dSurfboar'\n    at Context.it (test/rotateString.test.js:19:57)",
                 "diff": null
               },
-              "uuid": "e9393849-3056-488b-8761-f614b372924f",
-              "parentUUID": "de6c8373-dc3a-403d-8dd3-a9197d7d9952",
+              "uuid": "69c676d6-8d69-4e68-b538-6541579526b1",
+              "parentUUID": "6538a79f-fb3c-4087-b613-06d340fdb13f",
               "isHook": false,
               "skipped": false
             }
@@ -593,10 +581,10 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "158810c4-c425-4aee-9675-177646b78295",
-            "1564a873-6964-4cdb-8015-fcb77902beee",
-            "8a0cf168-4a63-4427-90a5-6dd7790cb71e",
-            "e9393849-3056-488b-8761-f614b372924f"
+            "10925afc-a583-4647-a71d-58cd8a29589d",
+            "fb5d2ee8-5604-4a0d-b67d-c7b2d03ff5ea",
+            "d573e52d-189f-41e2-9811-69860cf2c38c",
+            "69c676d6-8d69-4e68-b538-6541579526b1"
           ],
           "pending": [],
           "skipped": [],
