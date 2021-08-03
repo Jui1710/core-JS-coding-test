@@ -38,7 +38,14 @@
 
 const getObjectStructure = (obj) => {
   if (obj) {
-
+    for (const key in obj) {
+      if (typeof (obj[key]) === 'object') {
+        getObjectStructure(obj[key]);
+      } else {
+        obj[key] = typeof obj[key];
+      }
+    }
+    return obj;
   }
   else {
     throw new Error('Invalid Input');

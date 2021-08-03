@@ -2,14 +2,14 @@
   "stats": {
     "suites": 6,
     "tests": 21,
-    "passes": 19,
+    "passes": 21,
     "pending": 0,
-    "failures": 2,
-    "start": "2021-08-03T10:15:57.695Z",
-    "end": "2021-08-03T10:15:57.713Z",
-    "duration": 18,
+    "failures": 0,
+    "start": "2021-08-03T10:35:48.379Z",
+    "end": "2021-08-03T10:35:48.394Z",
+    "duration": 15,
     "testsRegistered": 21,
-    "passPercent": 90.47619047619048,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e2c9ad29-4d17-464e-8ca4-ca41087a3712",
+      "uuid": "bcddc247-c686-44e6-8f97-b1470142fdf7",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "864eb38c-b11b-41a5-a4d3-62c521f7a7b1",
+          "uuid": "7cac6515-198d-4433-b748-bad43d1d23f9",
           "title": "Addition test",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/addition.test.js",
           "file": "/test/addition.test.js",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "expect(addition(10, 20, 30)).to.equal(60);",
               "err": {},
-              "uuid": "17e2bfe0-c24b-4309-9da6-3db42ed43e23",
-              "parentUUID": "864eb38c-b11b-41a5-a4d3-62c521f7a7b1",
+              "uuid": "a166782d-2968-4d45-86db-f0489a7a879b",
+              "parentUUID": "7cac6515-198d-4433-b748-bad43d1d23f9",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "expect(function () {\n  addition();\n}).to.throw(Error, \"Invalid Input\");",
               "err": {},
-              "uuid": "e7b455dc-4ea4-488e-a3ac-11d9970726f1",
-              "parentUUID": "864eb38c-b11b-41a5-a4d3-62c521f7a7b1",
+              "uuid": "6cf3d2d1-b43f-4983-a7fa-caa7ac5f5da6",
+              "parentUUID": "7cac6515-198d-4433-b748-bad43d1d23f9",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Detects alphabet inputs",
               "fullTitle": "Addition test Detects alphabet inputs",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,28 +83,28 @@
               "context": null,
               "code": "expect(() => {\n  addition(\"a\", \"b\");\n}).to.throw(Error, \"Invalid Input\");",
               "err": {},
-              "uuid": "428c676d-c0ef-41a6-b913-03c21f465bae",
-              "parentUUID": "864eb38c-b11b-41a5-a4d3-62c521f7a7b1",
+              "uuid": "a8e058b2-9829-49cc-a858-3278019f5ce7",
+              "parentUUID": "7cac6515-198d-4433-b748-bad43d1d23f9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "17e2bfe0-c24b-4309-9da6-3db42ed43e23",
-            "e7b455dc-4ea4-488e-a3ac-11d9970726f1",
-            "428c676d-c0ef-41a6-b913-03c21f465bae"
+            "a166782d-2968-4d45-86db-f0489a7a879b",
+            "6cf3d2d1-b43f-4983-a7fa-caa7ac5f5da6",
+            "a8e058b2-9829-49cc-a858-3278019f5ce7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "94e93a9f-3108-4f80-9ceb-38602a4e2d80",
+          "uuid": "7ea6a793-bc53-4fbf-a814-1053d62a59e1",
           "title": "Time Converter",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/convertTime.test.js",
           "file": "/test/convertTime.test.js",
@@ -124,8 +124,8 @@
               "context": null,
               "code": "expect(() => {\n  convertTime(\"A\");\n}).to.throw(\"Invalid Input\");",
               "err": {},
-              "uuid": "0daf9cad-933b-43de-b156-f85cdacdda0d",
-              "parentUUID": "94e93a9f-3108-4f80-9ceb-38602a4e2d80",
+              "uuid": "59185256-ab15-48cb-9460-7d24f7fbeec6",
+              "parentUUID": "7ea6a793-bc53-4fbf-a814-1053d62a59e1",
               "isHook": false,
               "skipped": false
             },
@@ -142,8 +142,8 @@
               "context": null,
               "code": "// expect(convertTime(3600)).to.have.property(\"hours\");\n// expect(convertTime(3600)).to.have.property(\"minutes\");\n// expect(convertTime(3600)).to.have.property(\"seconds\");\nexpect(convertTime(3600)).to.have.keys([\"hours\", \"minutes\", \"seconds\"]);",
               "err": {},
-              "uuid": "7448d65a-43f0-430c-bd49-dc9b4f7cf60b",
-              "parentUUID": "94e93a9f-3108-4f80-9ceb-38602a4e2d80",
+              "uuid": "5ccc2e48-2c3c-4d67-9e5a-45e033f06d1c",
+              "parentUUID": "7ea6a793-bc53-4fbf-a814-1053d62a59e1",
               "isHook": false,
               "skipped": false
             },
@@ -160,17 +160,17 @@
               "context": null,
               "code": "// expect(convertTime(3600).hours).to.be.equal(1);\nexpect(convertTime(3600)).to.deep.equal({\n  hours: 1,\n  minutes: 0,\n  seconds: 0,\n});",
               "err": {},
-              "uuid": "bf682472-6f04-4a40-b2e2-179ec47e8707",
-              "parentUUID": "94e93a9f-3108-4f80-9ceb-38602a4e2d80",
+              "uuid": "15dbfeea-fe77-4cfe-9075-7a020c04e5a9",
+              "parentUUID": "7ea6a793-bc53-4fbf-a814-1053d62a59e1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0daf9cad-933b-43de-b156-f85cdacdda0d",
-            "7448d65a-43f0-430c-bd49-dc9b4f7cf60b",
-            "bf682472-6f04-4a40-b2e2-179ec47e8707"
+            "59185256-ab15-48cb-9460-7d24f7fbeec6",
+            "5ccc2e48-2c3c-4d67-9e5a-45e033f06d1c",
+            "15dbfeea-fe77-4cfe-9075-7a020c04e5a9"
           ],
           "failures": [],
           "pending": [],
@@ -181,7 +181,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "79cbbaa9-dc3e-49b4-8d7b-988ea117db7f",
+          "uuid": "20b8e814-ca82-4f7d-acb6-4217e9a7b65e",
           "title": "Frequency Counter",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/frequencyCounter.test.js",
           "file": "/test/frequencyCounter.test.js",
@@ -201,8 +201,8 @@
               "context": null,
               "code": "expect(frequencyCounter(\"aeiou\")).to.have.keys([\"a\", \"e\", \"i\", \"o\", \"u\"]);",
               "err": {},
-              "uuid": "41135fc6-c98a-417c-bfc9-9edaf64db28d",
-              "parentUUID": "79cbbaa9-dc3e-49b4-8d7b-988ea117db7f",
+              "uuid": "ebe5849f-2fab-420f-90ab-cb531e41d4d0",
+              "parentUUID": "20b8e814-ca82-4f7d-acb6-4217e9a7b65e",
               "isHook": false,
               "skipped": false
             },
@@ -219,8 +219,8 @@
               "context": null,
               "code": "expect(frequencyCounter(\"Surfboard\")).to.deep.equal({\n  a: 1,\n  e: 0,\n  i: 0,\n  o: 1,\n  u: 1,\n});",
               "err": {},
-              "uuid": "3fd3d05e-b69f-4a65-a972-1cbddee770ac",
-              "parentUUID": "79cbbaa9-dc3e-49b4-8d7b-988ea117db7f",
+              "uuid": "83ca3af3-d688-42ea-bffd-6fd5bdc3d67c",
+              "parentUUID": "20b8e814-ca82-4f7d-acb6-4217e9a7b65e",
               "isHook": false,
               "skipped": false
             },
@@ -237,17 +237,17 @@
               "context": null,
               "code": "expect(() => {\n  frequencyCounter(123);\n}).to.throw(Error, \"Invalid Input\");",
               "err": {},
-              "uuid": "b4098983-4030-46c9-a30b-c1e1c70e8392",
-              "parentUUID": "79cbbaa9-dc3e-49b4-8d7b-988ea117db7f",
+              "uuid": "a52e186e-76d6-47e8-b527-5f52f6251844",
+              "parentUUID": "20b8e814-ca82-4f7d-acb6-4217e9a7b65e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "41135fc6-c98a-417c-bfc9-9edaf64db28d",
-            "3fd3d05e-b69f-4a65-a972-1cbddee770ac",
-            "b4098983-4030-46c9-a30b-c1e1c70e8392"
+            "ebe5849f-2fab-420f-90ab-cb531e41d4d0",
+            "83ca3af3-d688-42ea-bffd-6fd5bdc3d67c",
+            "a52e186e-76d6-47e8-b527-5f52f6251844"
           ],
           "failures": [],
           "pending": [],
@@ -258,7 +258,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "1b9bef51-8820-42d4-9f15-f9d9e7fbff89",
+          "uuid": "383e0bf7-667f-4070-828e-c04526c1021b",
           "title": "Object Structure",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/objectStructure.test.js",
           "file": "/test/objectStructure.test.js",
@@ -269,7 +269,7 @@
               "title": "Check for no arguments passed",
               "fullTitle": "Object Structure Check for no arguments passed",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -278,8 +278,8 @@
               "context": null,
               "code": "expect(() => {\n  getObjectStructure();\n}).to.throw(Error, \"Invalid Input\");",
               "err": {},
-              "uuid": "92a79e26-a052-467e-afff-10cb6a7b2d05",
-              "parentUUID": "1b9bef51-8820-42d4-9f15-f9d9e7fbff89",
+              "uuid": "94d7f320-5cd1-496e-9ba1-40ef4b4a03a6",
+              "parentUUID": "383e0bf7-667f-4070-828e-c04526c1021b",
               "isHook": false,
               "skipped": false
             },
@@ -288,20 +288,16 @@
               "fullTitle": "Object Structure Checks if null object is detected",
               "timedOut": false,
               "duration": 1,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "expect(getObjectStructure({})).to.deep.equal({});",
-              "err": {
-                "message": "AssertionError: expected undefined to deeply equal {}",
-                "estack": "AssertionError: expected undefined to deeply equal {}\n    at Context.it (test/objectStructure.test.js:12:44)",
-                "diff": null
-              },
-              "uuid": "ceff95cd-2b27-4a3f-94de-879d4e8d6545",
-              "parentUUID": "1b9bef51-8820-42d4-9f15-f9d9e7fbff89",
+              "err": {},
+              "uuid": "1cbec7b5-944a-4037-80b8-ef8b6c957547",
+              "parentUUID": "383e0bf7-667f-4070-828e-c04526c1021b",
               "isHook": false,
               "skipped": false
             },
@@ -310,41 +306,36 @@
               "fullTitle": "Object Structure Check for single level object",
               "timedOut": false,
               "duration": 0,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "expect(getObjectStructure({ name: \"Some Name\", age: 10 })).to.deep.equal({\n  name: \"string\",\n  age: \"number\",\n});",
-              "err": {
-                "message": "AssertionError: expected undefined to deeply equal { name: 'string', age: 'number' }",
-                "estack": "AssertionError: expected undefined to deeply equal { name: 'string', age: 'number' }\n    at Context.it (test/objectStructure.test.js:16:72)",
-                "diff": null
-              },
-              "uuid": "3bee3c5a-a5ae-4f49-a1fc-4aeaea8f04ec",
-              "parentUUID": "1b9bef51-8820-42d4-9f15-f9d9e7fbff89",
+              "err": {},
+              "uuid": "cd1b5089-6019-4c85-8ffc-ab2ee3e86de8",
+              "parentUUID": "383e0bf7-667f-4070-828e-c04526c1021b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "92a79e26-a052-467e-afff-10cb6a7b2d05"
+            "94d7f320-5cd1-496e-9ba1-40ef4b4a03a6",
+            "1cbec7b5-944a-4037-80b8-ef8b6c957547",
+            "cd1b5089-6019-4c85-8ffc-ab2ee3e86de8"
           ],
-          "failures": [
-            "ceff95cd-2b27-4a3f-94de-879d4e8d6545",
-            "3bee3c5a-a5ae-4f49-a1fc-4aeaea8f04ec"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "e85ba433-66c6-4bd6-afdc-7be0981f53a4",
+          "uuid": "f1cb8ef1-0971-41a6-870b-36a40915d37b",
           "title": "RGB Converter",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/rgbToHexConverter.test.js",
           "file": "/test/rgbToHexConverter.test.js",
@@ -364,8 +355,8 @@
               "context": null,
               "code": "expect(rgbToHexConversion(10, 10, 10).length).to.be.equal(7);",
               "err": {},
-              "uuid": "343b0569-5ce2-45c5-a365-f1ade3d9ec9f",
-              "parentUUID": "e85ba433-66c6-4bd6-afdc-7be0981f53a4",
+              "uuid": "c8350876-fa29-4a34-b38c-a71cd29f432b",
+              "parentUUID": "f1cb8ef1-0971-41a6-870b-36a40915d37b",
               "isHook": false,
               "skipped": false
             },
@@ -382,8 +373,8 @@
               "context": null,
               "code": "expect(rgbToHexConversion(10, 10, 10)).to.equal(\"#0a0a0a\");",
               "err": {},
-              "uuid": "a7bb28f2-a023-4d9f-9dfa-1fba2fbbc961",
-              "parentUUID": "e85ba433-66c6-4bd6-afdc-7be0981f53a4",
+              "uuid": "13387447-0b2c-455f-b3d2-6d44fb5c8135",
+              "parentUUID": "f1cb8ef1-0971-41a6-870b-36a40915d37b",
               "isHook": false,
               "skipped": false
             },
@@ -391,7 +382,7 @@
               "title": "Checks if input is greater than 255",
               "fullTitle": "RGB Converter Checks if input is greater than 255",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -400,8 +391,8 @@
               "context": null,
               "code": "expect(() => {\n  rgbToHexConversion(300, 200, 200);\n}).to.throw(\"Invalid Input\");",
               "err": {},
-              "uuid": "b7404807-8616-4cbb-9143-e5e61235ca8b",
-              "parentUUID": "e85ba433-66c6-4bd6-afdc-7be0981f53a4",
+              "uuid": "97f8812a-28a3-4a4f-b6c3-f3ab13b8476c",
+              "parentUUID": "f1cb8ef1-0971-41a6-870b-36a40915d37b",
               "isHook": false,
               "skipped": false
             },
@@ -418,8 +409,8 @@
               "context": null,
               "code": "expect(() => {\n  rgbToHexConversion(100, 100, 100, 100);\n}).to.throw(\"Invalid Input\");",
               "err": {},
-              "uuid": "54d0d8fd-56f5-4f57-943a-dec8a6cda6b9",
-              "parentUUID": "e85ba433-66c6-4bd6-afdc-7be0981f53a4",
+              "uuid": "d497967c-f658-4268-b84a-66ca0fddaaaf",
+              "parentUUID": "f1cb8ef1-0971-41a6-870b-36a40915d37b",
               "isHook": false,
               "skipped": false
             },
@@ -436,30 +427,30 @@
               "context": null,
               "code": "expect(() => {\n  rgbToHexConversion(\"a\", 10, 10);\n}).to.throw(\"Invalid Input\");",
               "err": {},
-              "uuid": "b4fc5304-c84d-425c-bcb9-ed4237a62a6c",
-              "parentUUID": "e85ba433-66c6-4bd6-afdc-7be0981f53a4",
+              "uuid": "81b60f88-1d0d-4c13-94d2-28e36377463e",
+              "parentUUID": "f1cb8ef1-0971-41a6-870b-36a40915d37b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "343b0569-5ce2-45c5-a365-f1ade3d9ec9f",
-            "a7bb28f2-a023-4d9f-9dfa-1fba2fbbc961",
-            "b7404807-8616-4cbb-9143-e5e61235ca8b",
-            "54d0d8fd-56f5-4f57-943a-dec8a6cda6b9",
-            "b4fc5304-c84d-425c-bcb9-ed4237a62a6c"
+            "c8350876-fa29-4a34-b38c-a71cd29f432b",
+            "13387447-0b2c-455f-b3d2-6d44fb5c8135",
+            "97f8812a-28a3-4a4f-b6c3-f3ab13b8476c",
+            "d497967c-f658-4268-b84a-66ca0fddaaaf",
+            "81b60f88-1d0d-4c13-94d2-28e36377463e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "d09472d7-88df-43ba-8376-00a954612a8f",
+          "uuid": "00b90d7e-6a63-44a1-9241-92a8db964d8b",
           "title": "Check String rotation",
           "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/rotateString.test.js",
           "file": "/test/rotateString.test.js",
@@ -479,8 +470,8 @@
               "context": null,
               "code": "expect(() => {\n  rotateString();\n}).to.throw(\"Invalid Input\");",
               "err": {},
-              "uuid": "b3f42108-4b7e-4085-bafc-17e801cc72a5",
-              "parentUUID": "d09472d7-88df-43ba-8376-00a954612a8f",
+              "uuid": "5b9d284a-3144-48fd-acc7-6bdb22d1c116",
+              "parentUUID": "00b90d7e-6a63-44a1-9241-92a8db964d8b",
               "isHook": false,
               "skipped": false
             },
@@ -497,8 +488,8 @@
               "context": null,
               "code": "expect(() => {\n  rotateString(\"Surfboard\", 1, \"some\");\n}).to.throw(\"Invalid Direction\");",
               "err": {},
-              "uuid": "f68a2608-c955-46d7-9b03-ce5548c0bd12",
-              "parentUUID": "d09472d7-88df-43ba-8376-00a954612a8f",
+              "uuid": "6ffdb601-811d-4519-b7c7-f94d937ea1bb",
+              "parentUUID": "00b90d7e-6a63-44a1-9241-92a8db964d8b",
               "isHook": false,
               "skipped": false
             },
@@ -515,8 +506,8 @@
               "context": null,
               "code": "expect(rotateString(\"Surfboard\", 1, \"left\")).to.be.equal(\"urfboardS\");",
               "err": {},
-              "uuid": "bd13d244-4810-40f8-a58f-15ac6886ab6d",
-              "parentUUID": "d09472d7-88df-43ba-8376-00a954612a8f",
+              "uuid": "39ee3b31-e435-43da-838d-7771427b2893",
+              "parentUUID": "00b90d7e-6a63-44a1-9241-92a8db964d8b",
               "isHook": false,
               "skipped": false
             },
@@ -524,7 +515,7 @@
               "title": "Right rotation",
               "fullTitle": "Check String rotation Right rotation",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -533,23 +524,23 @@
               "context": null,
               "code": "expect(rotateString(\"Surfboard\", 1, \"right\")).to.be.equal(\"dSurfboar\");",
               "err": {},
-              "uuid": "597fa835-79ab-4c02-b4e5-bd8048745ed4",
-              "parentUUID": "d09472d7-88df-43ba-8376-00a954612a8f",
+              "uuid": "03fb46f9-5e72-4a7e-bfd5-f0ef57bf05c6",
+              "parentUUID": "00b90d7e-6a63-44a1-9241-92a8db964d8b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b3f42108-4b7e-4085-bafc-17e801cc72a5",
-            "f68a2608-c955-46d7-9b03-ce5548c0bd12",
-            "bd13d244-4810-40f8-a58f-15ac6886ab6d",
-            "597fa835-79ab-4c02-b4e5-bd8048745ed4"
+            "5b9d284a-3144-48fd-acc7-6bdb22d1c116",
+            "6ffdb601-811d-4519-b7c7-f94d937ea1bb",
+            "39ee3b31-e435-43da-838d-7771427b2893",
+            "03fb46f9-5e72-4a7e-bfd5-f0ef57bf05c6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
