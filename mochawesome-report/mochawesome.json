@@ -1,0 +1,652 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 21,
+    "passes": 3,
+    "pending": 0,
+    "failures": 18,
+    "start": "2021-08-03T06:07:51.683Z",
+    "end": "2021-08-03T06:07:51.702Z",
+    "duration": 19,
+    "testsRegistered": 21,
+    "passPercent": 14.285714285714285,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b2f007b0-b3ef-4424-883c-2d40741ffe26",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e32af24f-75b1-47c0-99fc-92a06d4c9751",
+          "title": "Addition test",
+          "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/addition.test.js",
+          "file": "/test/addition.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Return sum ",
+              "fullTitle": "Addition test Return sum ",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(addition(10, 20, 30)).to.equal(60);",
+              "err": {},
+              "uuid": "bfb434c4-5add-4fb2-9636-4c8abccd0312",
+              "parentUUID": "e32af24f-75b1-47c0-99fc-92a06d4c9751",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Detect empty inputs",
+              "fullTitle": "Addition test Detect empty inputs",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(function () {\n  addition();\n}).to.throw(Error, \"Invalid Input\");",
+              "err": {},
+              "uuid": "caa6ba13-e04d-402a-9903-9d7dc5ee94b5",
+              "parentUUID": "e32af24f-75b1-47c0-99fc-92a06d4c9751",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Detects alphabet inputs",
+              "fullTitle": "Addition test Detects alphabet inputs",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  addition(\"a\", \"b\");\n}).to.throw(Error, \"Invalid Input\");",
+              "err": {},
+              "uuid": "bb19a50f-61af-427b-8df7-643839f7c77a",
+              "parentUUID": "e32af24f-75b1-47c0-99fc-92a06d4c9751",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bfb434c4-5add-4fb2-9636-4c8abccd0312",
+            "caa6ba13-e04d-402a-9903-9d7dc5ee94b5",
+            "bb19a50f-61af-427b-8df7-643839f7c77a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "663fe55d-c092-4990-a1f1-d2ec08e056a6",
+          "title": "Time Converter",
+          "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/convertTime.test.js",
+          "file": "/test/convertTime.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Checks for invalid input",
+              "fullTitle": "Time Converter Checks for invalid input",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  convertTime(\"A\");\n}).to.throw(\"Invalid Input\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw an error",
+                "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/convertTime.test.js:8:16)",
+                "diff": null
+              },
+              "uuid": "7f1a1992-03f3-4a08-b721-c7c1feacd9d1",
+              "parentUUID": "663fe55d-c092-4990-a1f1-d2ec08e056a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Contains properties {hours, minutes, seconds}",
+              "fullTitle": "Time Converter Contains properties {hours, minutes, seconds}",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// expect(convertTime(3600)).to.have.property(\"hours\");\n// expect(convertTime(3600)).to.have.property(\"minutes\");\n// expect(convertTime(3600)).to.have.property(\"seconds\");\nexpect(convertTime(3600)).to.have.keys([\"hours\", \"minutes\", \"seconds\"]);",
+              "err": {
+                "message": "TypeError: Cannot convert undefined or null to object",
+                "estack": "TypeError: Cannot convert undefined or null to object\n    at Function.keys (<anonymous>)\n    at Object.getOwnEnumerableProperties (node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js:28:17)\n    at Proxy.assertKeys (node_modules/chai/lib/chai/core/assertions.js:2365:18)\n    at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)\n    at Context.it (test/convertTime.test.js:15:39)",
+                "diff": null
+              },
+              "uuid": "d467cd58-6900-45e6-b60a-fcb85d291453",
+              "parentUUID": "663fe55d-c092-4990-a1f1-d2ec08e056a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check correct conversion",
+              "fullTitle": "Time Converter Check correct conversion",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// expect(convertTime(3600).hours).to.be.equal(1);\nexpect(convertTime(3600)).to.deep.equal({\n  hours: 1,\n  minutes: 0,\n  seconds: 0,\n});",
+              "err": {
+                "message": "AssertionError: expected undefined to deeply equal { hours: 1, minutes: 0, seconds: 0 }",
+                "estack": "AssertionError: expected undefined to deeply equal { hours: 1, minutes: 0, seconds: 0 }\n    at Context.it (test/convertTime.test.js:19:39)",
+                "diff": null
+              },
+              "uuid": "4ad41b5d-bca9-4c58-a78c-34270a5597eb",
+              "parentUUID": "663fe55d-c092-4990-a1f1-d2ec08e056a6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7f1a1992-03f3-4a08-b721-c7c1feacd9d1",
+            "d467cd58-6900-45e6-b60a-fcb85d291453",
+            "4ad41b5d-bca9-4c58-a78c-34270a5597eb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c44f2343-4ca0-4c9d-870a-bc91ffedf271",
+          "title": "Frequency Counter",
+          "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/frequencyCounter.test.js",
+          "file": "/test/frequencyCounter.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check for all objects",
+              "fullTitle": "Frequency Counter Check for all objects",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(frequencyCounter(\"aeiou\")).to.have.keys([\"a\", \"e\", \"i\", \"o\", \"u\"]);",
+              "err": {
+                "message": "TypeError: Cannot convert undefined or null to object",
+                "estack": "TypeError: Cannot convert undefined or null to object\n    at Function.keys (<anonymous>)\n    at Object.getOwnEnumerableProperties (node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js:28:17)\n    at Proxy.assertKeys (node_modules/chai/lib/chai/core/assertions.js:2365:18)\n    at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)\n    at Context.it (test/frequencyCounter.test.js:6:47)",
+                "diff": null
+              },
+              "uuid": "dffc2bb8-bf31-4b94-8799-54ba9899bc89",
+              "parentUUID": "c44f2343-4ca0-4c9d-870a-bc91ffedf271",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check for vowel frequency",
+              "fullTitle": "Frequency Counter Check for vowel frequency",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(frequencyCounter(\"Surfboard\")).to.deep.equal({\n  a: 1,\n  e: 0,\n  i: 0,\n  o: 1,\n  u: 1,\n});",
+              "err": {
+                "message": "AssertionError: expected undefined to deeply equal { a: 1, e: 0, i: 0, o: 1, u: 1 }",
+                "estack": "AssertionError: expected undefined to deeply equal { a: 1, e: 0, i: 0, o: 1, u: 1 }\n    at Context.it (test/frequencyCounter.test.js:10:51)",
+                "diff": null
+              },
+              "uuid": "059b7237-d17e-4f05-967b-1bc398b2ff49",
+              "parentUUID": "c44f2343-4ca0-4c9d-870a-bc91ffedf271",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check for invalid input",
+              "fullTitle": "Frequency Counter Check for invalid input",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  frequencyCounter(123);\n}).to.throw(Error, \"Invalid Input\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw Error",
+                "estack": "AssertionError: expected [Function] to throw Error\n    at Context.it (test/frequencyCounter.test.js:22:16)",
+                "diff": null
+              },
+              "uuid": "5b8fc31f-0e13-42d8-aac1-e4ab3f270a9d",
+              "parentUUID": "c44f2343-4ca0-4c9d-870a-bc91ffedf271",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "dffc2bb8-bf31-4b94-8799-54ba9899bc89",
+            "059b7237-d17e-4f05-967b-1bc398b2ff49",
+            "5b8fc31f-0e13-42d8-aac1-e4ab3f270a9d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "da85a2a1-fe45-4d0f-ac34-533280ea95fb",
+          "title": "Object Structure",
+          "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/objectStructure.test.js",
+          "file": "/test/objectStructure.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check for no arguments passed",
+              "fullTitle": "Object Structure Check for no arguments passed",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  getObjectStructure();\n}).to.throw(Error, \"Invalid Input\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw Error",
+                "estack": "AssertionError: expected [Function] to throw Error\n    at Context.it (test/objectStructure.test.js:8:16)",
+                "diff": null
+              },
+              "uuid": "f8e1e1ee-3507-47ad-8135-944ed86bba6c",
+              "parentUUID": "da85a2a1-fe45-4d0f-ac34-533280ea95fb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if null object is detected",
+              "fullTitle": "Object Structure Checks if null object is detected",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(getObjectStructure({})).to.deep.equal({});",
+              "err": {
+                "message": "AssertionError: expected undefined to deeply equal {}",
+                "estack": "AssertionError: expected undefined to deeply equal {}\n    at Context.it (test/objectStructure.test.js:12:44)",
+                "diff": null
+              },
+              "uuid": "84fa9dd9-ffea-4ad8-9615-ffffbcd4c830",
+              "parentUUID": "da85a2a1-fe45-4d0f-ac34-533280ea95fb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check for single level object",
+              "fullTitle": "Object Structure Check for single level object",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(getObjectStructure({ name: \"Some Name\", age: 10 })).to.deep.equal({\n  name: \"string\",\n  age: \"number\",\n});",
+              "err": {
+                "message": "AssertionError: expected undefined to deeply equal { name: 'string', age: 'number' }",
+                "estack": "AssertionError: expected undefined to deeply equal { name: 'string', age: 'number' }\n    at Context.it (test/objectStructure.test.js:16:72)",
+                "diff": null
+              },
+              "uuid": "c032dcc4-479c-47d0-9df6-ba67a9f61a3f",
+              "parentUUID": "da85a2a1-fe45-4d0f-ac34-533280ea95fb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f8e1e1ee-3507-47ad-8135-944ed86bba6c",
+            "84fa9dd9-ffea-4ad8-9615-ffffbcd4c830",
+            "c032dcc4-479c-47d0-9df6-ba67a9f61a3f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f736b2ae-c095-452f-8aaa-a3bfb70a360f",
+          "title": "RGB Converter",
+          "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/rgbToHexConverter.test.js",
+          "file": "/test/rgbToHexConverter.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check if 7 digit output is sent ",
+              "fullTitle": "RGB Converter Check if 7 digit output is sent ",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(rgbToHexConversion(10, 10, 10).length).to.be.equal(7);",
+              "err": {
+                "message": "TypeError: Cannot read property 'length' of undefined",
+                "estack": "TypeError: Cannot read property 'length' of undefined\n    at Context.it (test/rgbToHexConverter.test.js:7:42)",
+                "diff": null
+              },
+              "uuid": "727fac42-297e-4d45-b60e-be84c9479a0f",
+              "parentUUID": "f736b2ae-c095-452f-8aaa-a3bfb70a360f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Returns rgb value",
+              "fullTitle": "RGB Converter Returns rgb value",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(rgbToHexConversion(10, 10, 10)).to.equal(\"#0a0a0a\");",
+              "err": {
+                "message": "AssertionError: expected undefined to equal '#0a0a0a'",
+                "estack": "AssertionError: expected undefined to equal '#0a0a0a'\n    at Context.it (test/rgbToHexConverter.test.js:12:47)",
+                "diff": null
+              },
+              "uuid": "2baac2db-f210-4f94-88d6-9b72f8410a33",
+              "parentUUID": "f736b2ae-c095-452f-8aaa-a3bfb70a360f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks if input is greater than 255",
+              "fullTitle": "RGB Converter Checks if input is greater than 255",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  rgbToHexConversion(300, 200, 200);\n}).to.throw(\"Invalid Input\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw an error",
+                "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rgbToHexConverter.test.js:19:16)",
+                "diff": null
+              },
+              "uuid": "402512fd-0b72-4c4a-a3f2-16a65d78ddf1",
+              "parentUUID": "f736b2ae-c095-452f-8aaa-a3bfb70a360f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Takes only three inputs",
+              "fullTitle": "RGB Converter Takes only three inputs",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  rgbToHexConversion(100, 100, 100, 100);\n}).to.throw(\"Invalid Input\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw an error",
+                "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rgbToHexConverter.test.js:26:16)",
+                "diff": null
+              },
+              "uuid": "b329ca88-746e-461a-ab01-3b9eb427a9a1",
+              "parentUUID": "f736b2ae-c095-452f-8aaa-a3bfb70a360f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Only takes integer input",
+              "fullTitle": "RGB Converter Only takes integer input",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  rgbToHexConversion(\"a\", 10, 10);\n}).to.throw(\"Invalid Input\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw an error",
+                "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rgbToHexConverter.test.js:32:16)",
+                "diff": null
+              },
+              "uuid": "ba33731c-3b13-4147-ad00-ddbebf27cd88",
+              "parentUUID": "f736b2ae-c095-452f-8aaa-a3bfb70a360f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "727fac42-297e-4d45-b60e-be84c9479a0f",
+            "2baac2db-f210-4f94-88d6-9b72f8410a33",
+            "402512fd-0b72-4c4a-a3f2-16a65d78ddf1",
+            "b329ca88-746e-461a-ab01-3b9eb427a9a1",
+            "ba33731c-3b13-4147-ad00-ddbebf27cd88"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "526ccd87-22cc-464f-a454-2ce312c705ae",
+          "title": "Check String rotation",
+          "fullFile": "/home/juilee/Raw Assesement/core-JS-coding-test/test/rotateString.test.js",
+          "file": "/test/rotateString.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check input ",
+              "fullTitle": "Check String rotation Check input ",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  rotateString();\n}).to.throw(\"Invalid Input\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw an error",
+                "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rotateString.test.js:8:16)",
+                "diff": null
+              },
+              "uuid": "e6436a0c-734f-4306-a3de-63795ffd22fe",
+              "parentUUID": "526ccd87-22cc-464f-a454-2ce312c705ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks for invalid direction",
+              "fullTitle": "Check String rotation Checks for invalid direction",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n  rotateString(\"Surfboard\", 1, \"some\");\n}).to.throw(\"Invalid Direction\");",
+              "err": {
+                "message": "AssertionError: expected [Function] to throw an error",
+                "estack": "AssertionError: expected [Function] to throw an error\n    at Context.it (test/rotateString.test.js:13:16)",
+                "diff": null
+              },
+              "uuid": "62f9a367-613e-494f-9cde-399f464c5e21",
+              "parentUUID": "526ccd87-22cc-464f-a454-2ce312c705ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Left rotation",
+              "fullTitle": "Check String rotation Left rotation",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(rotateString(\"Surfboard\", 1, \"left\")).to.be.equal(\"urfboardS\");",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'urfboardS'",
+                "estack": "AssertionError: expected undefined to equal 'urfboardS'\n    at Context.it (test/rotateString.test.js:16:56)",
+                "diff": null
+              },
+              "uuid": "fc53a3f4-da02-4c75-8112-536372eb274a",
+              "parentUUID": "526ccd87-22cc-464f-a454-2ce312c705ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Right rotation",
+              "fullTitle": "Check String rotation Right rotation",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(rotateString(\"Surfboard\", 1, \"right\")).to.be.equal(\"dSurfboar\");",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'dSurfboar'",
+                "estack": "AssertionError: expected undefined to equal 'dSurfboar'\n    at Context.it (test/rotateString.test.js:19:57)",
+                "diff": null
+              },
+              "uuid": "f5a5538d-3a99-4ac2-abb6-ee9074ff4b3c",
+              "parentUUID": "526ccd87-22cc-464f-a454-2ce312c705ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e6436a0c-734f-4306-a3de-63795ffd22fe",
+            "62f9a367-613e-494f-9cde-399f464c5e21",
+            "fc53a3f4-da02-4c75-8112-536372eb274a",
+            "f5a5538d-3a99-4ac2-abb6-ee9074ff4b3c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
