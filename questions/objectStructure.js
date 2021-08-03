@@ -37,7 +37,12 @@
 // new Error("Invalid Input")
 
 const getObjectStructure = (obj) => {
-  // write code here
+  if (obj) {
+
+  }
+  else {
+    throw new Error('Invalid Input');
+  }
 };
 
 // donot remove this line
